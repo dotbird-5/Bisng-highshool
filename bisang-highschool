@@ -1,66 +1,6 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 첫 번째 웹사이트</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #282c34;
-      color: white;
-      transition: background-color 0.5s ease;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    button {
-      padding: 12px 24px;
-      font-size: 1rem;
-      font-weight: bold;
-      color: #282c34;
-      background-color: #61dafb;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s, background-color 0.2s;
-    }
-    button:hover {
-      transform: scale(1.05);
-      background-color: #21a1f1;
-    }
-  </style>
-</head>
+<html>
 <body>
-
-  <h1 id="title">🎉 웹사이트 생성 성공!</h1>
-  <button onclick="changeColor()">색상 바꾸기</button>
-
-  <script>
-    const colors = ['#282c34', '#e63946', '#2a9d8f', '#e76f51', '#457b9d', '#6a0572'];
-    const messages = [
-      "🎉 웹사이트 생성 성공!",
-      "🚀 GitHub Pages 동작 중!",
-      "✨ 멋진 페이지가 완성되었어요!",
-      "🎈 클릭해 주셔서 감사합니다!"
-    ];
-
-    function changeColor() {
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-      
-      document.body.style.backgroundColor = randomColor;
-      document.getElementById('title').innerText = randomMessage;
-    }
-  </script>
-
+  <h1>연결 성공!</h1>
 </body>
 </html>
