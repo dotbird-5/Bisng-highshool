@@ -27,7 +27,7 @@
       align-items: center;
     }
 
-    /* 상단 타이틀 (글자 크기 조절로 한 줄 유지) */
+    /* 상단 타이틀 */
     header h1 {
       font-size: 1rem;
       font-weight: bold;
@@ -35,22 +35,22 @@
       margin-right: 8px;
     }
 
-    /* 네비게이션 메뉴 (글자 크기 & 간격 줄임) */
+    /* 상단 메뉴 */
     nav ul {
       display: flex;
       list-style: none;
-      gap: 6px; /* 메뉴 사이 간격 축소 */
+      gap: 6px; 
       align-items: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 0.72rem; /* 글자 크기 축소 */
+      font-size: 0.72rem; 
       white-space: nowrap; /* 줄바꿈 방지 */
     }
 
-    /* 모니터/패드처럼 화면이 좀 더 넓어지면 글자 크게 변경 */
+    /* 화면에 따른 글자 크기 변경 */
     @media (min-width: 480px) {
       header {
         padding: 15px 20px;
@@ -66,7 +66,7 @@
       }
     }
 
-    /* 메인 비주얼 배너 */
+    /* 메인 배너 */
     .hero {
       background: linear-gradient(rgba(128, 29, 12, 0.7), rgba(128, 29, 12, 0.7)), 
                   url('Screenshot_20260925_211851_BAND.jpg') center/cover;
@@ -85,7 +85,7 @@
       word-break: keep-all;
     }
 
-    /* 카드 컨테이너 */
+    /* 카드 기본 */
     .container {
       max-width: 1000px;
       margin: 25px auto;
